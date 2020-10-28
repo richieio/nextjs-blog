@@ -1,16 +1,23 @@
+// src/any-component.js
+/** @jsx jsx */
+
 import Head from 'next/head'
+import { jsx } from "theme-ui";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Learn Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div sx={{ backgroundColor: "primary", color: "#fff", p: 4 }}>
+        tomato
+      </div>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className="description">
